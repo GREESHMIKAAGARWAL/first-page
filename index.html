@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animated Login Form</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<meta charset="UTF-8" name="viewport" content="withdevice-width, initial-scale=1">
+	
+
+
+	<img class="wave" src="img/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="img/bg.JPG">
+		</div>
+		
+				
+		  <!-- partial -->
+			
+		  
+		<div class="login-content">
+			<form action="index.html">
+				<!--<img src="img/avatar.JPG">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+           		   		<h5>Username</h5>
+           		   		<input type="text" class="input">
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+           		    	<h5>Password</h5>
+           		    	<input type="password" class="input">
+            	   </div>
+            	</div>
+            	<a href="#">Forgot Password?</a>
+            	<input type="submit" class="btn" value="Login">
+            </form>
+        </div>
+	</div> 
+	<script type="text/javascript" src="js/main.js"></script>-->
+	
+
+
+
+
+
+
+
+  
+  <style type="text/css">
+  
+  body { font-family: sans-serif; }
+
+.scene {
+  width: 340px;
+  height:370px;
+  border: 1px solid
+   #ffffff;
+  border-spacing:15px;
+  margin-left: auto;
+  margin-right: auto; 
+  margin-top: 100px;
+  
+  background: white;
+  
+}
+
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transform-origin: center right;
+  transition: transform 2s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 25px;
+  border-spacing:15px;
+   background:white;
+   
+ }
+
+
+.card.is-flipped {
+  transform: translateX(-100%) rotateY(-180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+ /*line-height: 35px;*/
+  color:black;
+  text-align:left;
+  padding-left:10px;
+  /*padding: 27px 27px 2px;*/
+  border-radius:20px;
+  backface-visibility: hidden;
+}
+
+.card__face--front {
+  background:white;
+}
+
+.card__face--back {
+  background:white;
+  transform: rotateY(180deg);
+}
+
+.col {
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 27px;
+  margin-top: 6px;
+}
+.bol{
+  float: left;
+  width: 50%;
+  margin: auto;
+  padding: 0 27px;
+  margin-top: 6px;
+}
+
+
+
+
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 275px;
+  padding: 15px;
+  margin: 5px 0 18px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #38d39f;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  
+  width:280px;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button 
+.forgotbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}*/
+
+a{
+  text-align:center;
+}
+
+
+
+
+
+</style>
+</head>
+
+<body>
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front">
+		<br>
+       <h1>Log in <br> </h1>
+     <small>This is a secure system and you will need to
+        provide your login details to access the site</small>
+        <div class="col">
+        <input type="text" name="username" placeholder="Username" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <span class="psw" onclick="showForgotPassword()">ForgotPassword? <br></span>
+        <br>
+        <button type="button" class="login">Login </button> 
+		<br>
+		<br>
+		<br>
+        
+      </div>
+
+    </div>
+    <div class="card__face card__face--back">
+		<br>
+       <h1>Reset Password</h1>
+       <small>Enter your email so we can send you a reset link for your
+          password</small>
+          <br>
+          <div class="bol">
+          <input type="text" name="username" placeholder="Username" required>
+          <input type="password" name="password" placeholder="Email ID" required>
+          <button type="button" class="login">Reset Password </button >
+            <br>
+          <span class="Reset" onclick="showResetPassword()">Back to log-in page </span>
+          <br>
+          <!--<a  href="#" style="color:#38d39f">Back to log-in page</a>-->
+        </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script type="text/javascript">
+
+  var card = document.querySelector('.card');
+ 
+ 
+function showForgotPassword(){
+  card.style.transform = "translateX(-100%) rotateY(-180deg)";
+}
+function showResetPassword(){ 
+  card.style.transform = "translateZ(-100px)";
+
+}
+function showLogin(){
+  prism.style.transform = "translateZ(-100px)";
+}
+//card.addEventListener( 'click', function() {
+  //card.classList.toggle('is-flipped');
+//});
+</script>
+</html>
+
+
+
+
+	
+
+
+
+
+</body>
+</html>
