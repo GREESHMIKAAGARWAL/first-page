@@ -7,7 +7,7 @@
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta charset="UTF-8" name="viewport" content="withdevice-width, initial-scale=1">
 	
-
+  
 
 	<img class="wave" src="img/wave.png">
 	<div class="container">
@@ -21,9 +21,13 @@
 		  
 		<div class="login-content">
 			<form action="index.html">
-				<!--<img src="img/avatar.JPG">
-				<h2 class="title">Welcome</h2>
-           		<div class="input-div one">
+        
+        <img src="img/ooo.PNG">
+        
+
+				 
+				
+           	<!----<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
            		   </div>
@@ -58,11 +62,13 @@
   
   <style type="text/css">
   
-  body { font-family: sans-serif; }
+  body { font-family: sans-serif; 
+  
+  }
 
 .scene {
   width: 340px;
-  height:370px;
+  height:400px;
   border: 1px solid
    #ffffff;
   border-spacing:15px;
@@ -81,7 +87,7 @@
   cursor: pointer;
   transform-style: preserve-3d;
   transform-origin: center right;
-  transition: transform 2s;
+  transition: transform 1s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   border-radius: 25px;
   border-spacing:15px;
@@ -186,13 +192,12 @@ a{
 
 
 
-
-
 </style>
 </head>
 
 <body>
-
+  
+  
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front">
@@ -203,9 +208,15 @@ a{
         <div class="col">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
+        <br>
+        
         <span class="psw" onclick="showForgotPassword()">ForgotPassword? <br></span>
         <br>
         <button type="button" class="login">Login </button> 
+        <br>
+        <br>
+       <!----<span>New to family? </span>-->
+        <a href="hijad/pk.html">New to family?signup</a>
 		<br>
 		<br>
 		<br>
@@ -214,23 +225,34 @@ a{
 
     </div>
     <div class="card__face card__face--back">
-		<br>
+    <br>
+    <br>
        <h1>Reset Password</h1>
+       <br>
        <small>Enter your email so we can send you a reset link for your
           password</small>
+          <br>
           <br>
           <div class="bol">
           <input type="text" name="username" placeholder="Username" required>
           <input type="password" name="password" placeholder="Email ID" required>
           <button type="button" class="login">Reset Password </button >
             <br>
-          <span class="Reset" onclick="showResetPassword()">Back to log-in page </span>
+            
+          <span class="Reset" onclick="showResetPassword()">Login </span>
           <br>
           <!--<a  href="#" style="color:#38d39f">Back to log-in page</a>-->
         </div>
     </div>
   </div>
 </div>
+
+
+
+
+
+
+
 
 </body>
 
