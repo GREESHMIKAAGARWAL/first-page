@@ -3,6 +3,7 @@
 <head>
 	<title>Animated Login Form</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta charset="UTF-8" name="viewport" content="withdevice-width, initial-scale=1">
@@ -62,13 +63,13 @@
   
   <style type="text/css">
   
-  body { font-family: sans-serif; 
+  body { font-family: 'Merriweather Sans',sans-serif; 
   
   }
 
 .scene {
   width: 340px;
-  height:410px;
+  height:440px;
   border: 1px solid
    #ffffff;
   border-spacing:15px;
@@ -202,8 +203,9 @@ a{
   <div class="card">
     <div class="card__face card__face--front">
     <br>
-    
+    <br>
        <h1>Log in <br> </h1>
+	    <br>
      <small>This is a secure system and you will need to
         provide your login details to access the site</small>
         <br>
@@ -217,9 +219,11 @@ a{
         <br>
         <button type="button" class="login">Login </button> 
         <br>
-        <br>
+        
        <!----<span>New to family? </span>-->
-        <a href="signup form/sign.html">New to family?signup</a>
+	 <small> New to family? </small>
+		<a href="signup form/sign.html">signup</a>
+        <!--<a href="signup form/sign.html">New to family?signup</a>-->
 		<br>
 		<br>
 		<br>
@@ -241,6 +245,7 @@ a{
           <input type="password" name="password" placeholder="Email ID" required>
           <button type="button" class="login">Reset Password </button >
             <br>
+		  <br>
             
           <span class="Reset" onclick="showResetPassword()">Login </span>
           <br>
