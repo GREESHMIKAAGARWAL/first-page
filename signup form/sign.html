@@ -12,14 +12,17 @@
         background-attachment: fixed;
         width: 100%;
         height:auto;
-        
+        }
+        .mu{
+          margin: 40px 0;;
         }
   .scene {
   width: 550px;
   height: 520px;
- /* border: 1px solid #ffffff;*/
+  /*border: 1px solid #ffffff;*/
   margin: 10px 0;
   perspective: 600px;
+  border-radius: 30px;
   
   margin-left:auto;
   margin-Right:auto;
@@ -58,7 +61,7 @@
   transform-origin: center right;
   transition: transform 1s;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 25px;
+  border-radius: 45px;
   border-spacing:15px;
  
 }
@@ -177,7 +180,7 @@ button:hover {
   opacity:1;
 }
 
-.close {
+/*.close {
   color: #aaaaaa;
 
   float: right;
@@ -190,7 +193,7 @@ button:hover {
   color: #000;
   text-decoration: none;
   cursor: pointer;
-}
+}*/
 .bf
 {
   background-color: aliceblue;
@@ -214,18 +217,20 @@ button:hover {
   opacity: 0.9;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   width:280px;
+  margin:40px 0;
 }
 </style>
 </head>
 <body>
-   <img src="img/bg16.PNG" style="display:block; margin-left: auto; margin-right: auto;" height="20%" width="20%" > 
+  <img src="img/bg16.PNG" style="display:block; margin-left: auto; margin-right: auto;" height="20%" width="20%" >
+    
  <!---- <a class="scene">Click here to show the popup</a>-->
  <a href="index.html" class="bf">Login</a>
     <div class="scene scene--card">
         <div  ID="myModal" class="card">
           <div class="card__face card__face--front">
             
-            <span class="close">&times;</span>
+            <!--<span class="close">&times;</span>-->
               <br>
               <br>
             <h1>Welcome aboard</h1> 
@@ -340,7 +345,7 @@ button:hover {
             <br>
         
             <label for="password"><b>Repeat Password</b></label>
-            <input type="password" placeholder="" name="Password" required>
+            <input type="password" placeholder="(Arleast 6 characters)" name="Password" required>
             <br>
             <br>
           <span> <a type="submit"   href="ocean/index.html" class="mu">Submit</a></span>
@@ -414,6 +419,5 @@ $(window).load(function () {
 });
 
 
-
-  </script>
-  </html>
+	</script>
+</html>
