@@ -3,7 +3,7 @@
 <head>
 	<title>Animated Login Form</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+	<!--<link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">-->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 	<meta charset="UTF-8" name="viewport" content="withdevice-width, initial-scale=1">
@@ -23,7 +23,7 @@
 		<div class="login-content">
 			<form action="index.html">
         
-        <img src="img/door.PNG">
+       <!-- <img src="img/door.PNG">-->
         
 
 				 
@@ -63,13 +63,13 @@
   
   <style type="text/css">
   
-  body { font-family: 'Merriweather Sans',sans-serif; 
+  body { font-family: 'Arial',sans-serif; 
   
   }
 
 .scene {
   width: 360px;
-  height:440px;
+  height:400px;
   border: 1px solid
    #ffffff;
   border-spacing:15px;
@@ -146,10 +146,11 @@
 /* Full-width input fields */
 input[type=text], input[type=password] {
   width: 275px;
-  padding: 15px;
+  padding: 12px;
   margin: 5px 0 18px 0;
   display: inline-block;
-  border: none;
+border: 0.5px solid gainsboro;
+  border-radius: 25px;
   background: #f1f1f1;
 }
 
@@ -169,7 +170,9 @@ button {
   color: white;
   padding: 14px 20px;
   margin: 8px 0px;
-  border: none;
+border: 0.5px solid #38d39f;
+  border-radius:25px
+  
   cursor: pointer;
   width: 100%;
   opacity: 0.9;
@@ -191,25 +194,26 @@ a{
   text-align:center;
 }
 
-
+h1{
+	text-align:center;
+}
 
 </style>
 </head>
 
 <body>
-  
+  <img src ="img/bg16.png" class="byj">
   
 <div class="scene scene--card">
   <div class="card">
     <div class="card__face card__face--front">
     <br>
     <br>
-       <h1>Log in <br> </h1>
+       <h1>Welcome Back <br> </h1>
 	    <br>
-     <small>This is a secure system and you will need to
-        provide your login details to access the site</small>
-        <br>
-        <br>
+     <!--<small>This is a secure system and you will need to
+        provide your login details to access the site</small>-->
+       
         <div class="col">
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
@@ -221,8 +225,9 @@ a{
         <br>
         
        <!----<span>New to family? </span>-->
-	 <small> New to family? </small>
+	 <p> New to family? 
 		<a href="signup form/sign.html">signup</a>
+		</p>
         <!--<a href="signup form/sign.html">New to family?signup</a>-->
 		<br>
 		<br>
@@ -236,10 +241,9 @@ a{
     <br>
        <h1>Reset Password</h1>
        <br>
-       <small>Enter your email so we can send you a reset link for your
-          password</small>
-          <br>
-          <br>
+       <!--<small>Enter your email so we can send you a reset link for your
+          password</small>-->
+          
           <div class="bol">
           <input type="text" name="username" placeholder="Username" required>
           <input type="password" name="password" placeholder="Email ID" required>
